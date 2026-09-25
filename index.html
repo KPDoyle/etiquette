@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#19352c" />
+<title>Etiquette — Know what to do. Know what to say.</title>
+<meta name="description" content="A modern personal etiquette companion for real life." />
+<style>
+:root{--ink:#1d2923;--muted:#68746d;--paper:#faf8f3;--cream:#f1ede3;--deep:#19352c;--sage:#e5ebe2;--line:#dde2db;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+.shell{width:min(1160px,calc(100% - 44px));margin:auto}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700}
+.mark{width:32px;height:32px;border-radius:48% 52% 45% 55%;background:var(--deep);color:white;display:grid;place-items:center;font-family:Georgia,serif;font-style:italic;font-size:20px}
+.navlinks{display:flex;gap:28px;align-items:center}
+.navlinks a{font-size:13px;color:#5d6963;text-decoration:none}
+.navcta{border:0;background:transparent;font-weight:700;font-size:13px;color:var(--ink)}
+.hero{min-height:650px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px;padding:42px 0 70px}
+.kicker,.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#7c8881}
+.hero h1,.section h2,.dark h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.045em;margin:18px 0}
+.hero h1{font-size:clamp(54px,7vw,88px);line-height:.96}
+.hero h1 em{color:#708176;font-weight:400}
+.hero p.lead{font-size:18px;line-height:1.7;color:var(--muted);max-width:630px}
+.ctarow{display:flex;gap:16px;align-items:center;margin-top:30px}
+.primary{background:var(--deep);color:white;border:0;border-radius:12px;padding:15px 20px;font-weight:700}
+.note{font-size:12px;color:#7f8883}
+.note:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#8ba28f;margin-right:8px}
+.visual{position:relative;display:grid;place-items:center;min-height:520px}
+.glow{position:absolute;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,#e2e8dc 0,#f2eee5 60%,transparent 70%)}
+.phone{position:relative;width:318px;background:#101814;border-radius:40px;padding:8px;box-shadow:0 34px 80px rgba(28,45,38,.20);transform:rotate(1.5deg)}
+.screen{background:#f8f7f2;border-radius:32px;min-height:490px;padding:26px 18px 20px}
+.phonebar{height:22px;color:white;font-size:9px;display:flex;justify-content:space-between;align-items:center;padding:0 14px 7px}
+.mini-brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:12px}
+.smallmark{width:26px;height:26px;font-size:16px}
+.hello{font-size:11px;color:#8d958f;margin-top:28px}
+.screen h3{font-family:Georgia,serif;font-size:25px;font-weight:400;line-height:1.08;margin:6px 0 18px}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.quick div{background:white;border:1px solid #e1e4de;border-radius:13px;padding:12px;min-height:76px;display:flex;flex-direction:column;justify-content:space-between}
+.quick b{font-size:16px;font-weight:500}
+.quick span{font-size:9px;line-height:1.3}
+.miniask{margin:12px 0;background:white;border:1px solid #e0e2dd;border-radius:13px;padding:12px;font-size:10px;color:#9ba09d;display:flex;justify-content:space-between}
+.now{background:var(--deep);color:white;border-radius:15px;padding:15px}
+.now small{text-transform:uppercase;letter-spacing:.13em;opacity:.6;font-size:8px}
+.now strong{display:block;font-family:Georgia,serif;font-weight:400;font-size:16px;margin:6px 0}
+.now p{font-size:9px;opacity:.65;margin:0 0 10px}
+.now button{border:0;background:transparent;color:white;padding:0;font-size:9px}
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stripin{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:16px;color:#808984;font-size:12px}
+.stripin strong{color:var(--ink)}
+.section{padding:105px 0}
+.sectionhead{max-width:750px}
+.section h2,.dark h2{font-size:clamp(38px,5vw,58px);line-height:1.05}
+.sectionhead p{color:var(--muted);line-height:1.7;max-width:650px}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:48px}
+.card{border:1px solid var(--line);background:transparent;text-align:left;border-radius:18px;padding:20px;min-height:238px;color:var(--ink);transition:.2s;position:relative}
+.card:hover,.card.active{transform:translateY(-3px);background:white;box-shadow:0 16px 40px rgba(30,47,39,.08)}
+.icon{width:38px;height:38px;border-radius:11px;background:var(--sage);display:grid;place-items:center;font-weight:700;margin-bottom:30px}
+.card small{text-transform:uppercase;letter-spacing:.12em;color:#8c948f;font-size:9px}
+.card h3{font-family:Georgia,serif;font-size:25px;font-weight:400;margin:6px 0 11px}
+.card p{font-size:12px;line-height:1.6;color:var(--muted)}
+.arrow{position:absolute;right:18px;bottom:18px;color:#8b958f}
+.dark{background:var(--deep);color:white;padding:98px 0}
+.demogrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:74px}
+.dark .eyebrow{color:#9fb1a7}
+.darkcopy>p{color:#b0bbb5;line-height:1.7}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin:26px 0}
+.pills button{border:1px solid #466157;background:transparent;color:#b9c5bf;border-radius:999px;padding:8px 12px;font-size:11px}
+.pills button.active{background:#e8eee7;color:var(--deep);border-color:#e8eee7}
+.samples{display:flex;flex-direction:column;gap:3px}
+.samples span{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:#82988e;margin-bottom:4px}
+.samples button{text-align:left;border:0;border-bottom:1px solid #355047;background:transparent;color:#d2dbd6;padding:11px 0;font-size:12px}
+.adviser{background:#f8f7f2;color:var(--ink);border-radius:24px;padding:24px;min-height:555px;box-shadow:0 24px 70px rgba(0,0,0,.18)}
+.adviserhead{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid #e0e2dd}
+.adviserhead .left{display:flex;gap:10px;align-items:center}
+.adviserhead strong{display:block;font-size:12px}
+.adviserhead small{font-size:9px;color:#879089}
+.concept{font-size:9px;color:#7e8a82}
+.askbox{background:white;border:1px solid #dfe2dc;border-radius:16px;padding:14px;margin-top:20px}
+.askbox textarea{width:100%;border:0;resize:none;outline:0;background:transparent;color:var(--ink);font-size:15px;line-height:1.5}
+.asktools{display:flex;justify-content:flex-end}
+.asktools button{border:0;background:var(--deep);color:white;border-radius:9px;padding:9px 13px;font-size:11px;font-weight:700}
+.empty{height:305px;display:grid;place-items:center;text-align:center;color:#98a19c;font-size:12px}
+.answer{padding:24px 4px 0}
+.answer .label{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:#83928a}
+.answer h3{font-family:Georgia,serif;font-size:27px;font-weight:400;margin:10px 0}
+.answer>p{font-size:12px;line-height:1.6;color:#6d7972}
+.answer ol{list-style:none;margin:18px 0;padding:0}
+.answer li{display:flex;gap:10px;padding:12px 0;border-top:1px solid #e1e3de;font-size:11px;line-height:1.5}
+.answer li i{font-style:normal;flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:#e8ede6;display:grid;place-items:center;font-size:9px}
+.takeaway{background:#e8eee7;border-radius:10px;padding:11px 12px;font-size:10px}
+.split{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:end}
+.situationgrid{display:grid;grid-template-columns:1.25fr .75fr .75fr;gap:12px;margin-top:52px}
+.feature{border:1px solid var(--line);border-radius:18px;padding:25px;min-height:230px}
+.feature.big{grid-row:span 2;background:var(--cream);min-height:472px;display:flex;flex-direction:column}
+.feature .num{font-size:10px;color:#969d98;letter-spacing:.12em}
+.feature h3{font-family:Georgia,serif;font-size:25px;font-weight:400;margin:28px 0 10px}
+.feature p{font-size:12px;line-height:1.7;color:var(--muted)}
+.checks{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.checks span{background:white;border-radius:10px;padding:12px;font-size:11px}
+.principles{background:#243b32;color:white;padding:100px 0}
+.principlesgrid{display:grid;grid-template-columns:1fr 1fr;gap:90px}
+.principles h2{max-width:520px}
+.pitems>div{display:grid;grid-template-columns:42px 145px 1fr;gap:12px;border-top:1px solid #4a6057;padding:21px 0}
+.pitems span{font-size:10px;color:#83958d}
+.pitems strong{font-family:Georgia,serif;font-weight:400;font-size:18px}
+.pitems p{margin:0;color:#afbbb5;font-size:11px;line-height:1.6}
+footer{min-height:145px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#89928d;font-size:11px}
+@media(max-width:900px){.navlinks a{display:none}.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.demogrid,.split,.principlesgrid{grid-template-columns:1fr;gap:44px}.situationgrid{grid-template-columns:1fr 1fr}.feature.big{grid-column:span 2;grid-row:auto;min-height:340px}.stripin{flex-wrap:wrap;padding:20px 0}.pitems>div{grid-template-columns:35px 130px 1fr}}
+@media(max-width:620px){.shell{width:calc(100% - 28px)}nav{height:68px}.hero{padding-top:48px;gap:18px}.hero h1{font-size:52px}.hero p.lead{font-size:16px}.ctarow{align-items:flex-start;flex-direction:column}.visual{min-height:500px;overflow:hidden}.phone{width:286px}.glow{width:380px;height:380px}.stripin{justify-content:flex-start}.section{padding:78px 0}.cards{grid-template-columns:1fr}.card{min-height:205px}.dark{padding:78px 0}.adviser{padding:16px;min-height:520px}.situationgrid{grid-template-columns:1fr}.feature.big{grid-column:auto;min-height:375px}.pitems>div{grid-template-columns:30px 1fr}.pitems p{grid-column:2}.principles{padding:78px 0}footer{padding:35px 0;min-height:auto;flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<nav class="shell">
+<a href="#top" class="brand"><span class="mark">e</span><span>etiquette</span></a>
+<div class="navlinks"><a href="#how">How it works</a><a href="#situations">Situations</a><a href="#principles">Principles</a><button class="navcta" onclick="goDemo()">Try the concept →</button></div>
+</nav>
+
+<main>
+<section class="hero shell" id="top">
+<div>
+<div class="kicker">✦ Modern social intelligence</div>
+<h1>Know what to do.<br><em>Know what to say.</em></h1>
+<p class="lead">A personal etiquette companion for dinners, messages, travel, work, family and all the moments nobody quite teaches you how to handle.</p>
+<div class="ctarow"><button class="primary" onclick="goDemo()">Ask Etiquette →</button><span class="note">Product preview · no account needed</span></div>
+</div>
+<div class="visual">
+<div class="glow"></div>
+<div class="phone">
+<div class="phonebar"><span>9:41</span><span>●</span><span>•••</span></div>
+<div class="screen">
+<div class="mini-brand"><span class="mark smallmark">e</span> etiquette</div>
+<div class="hello">Good evening.</div>
+<h3>What are you navigating?</h3>
+<div class="quick"><div><b>?</b><span>Something awkward</span></div><div><b>◷</b><span>An occasion</span></div><div><b>“</b><span>A message</span></div><div><b>◎</b><span>Another culture</span></div></div>
+<div class="miniask"><span>Ask anything...</span><span>⌁ &nbsp; ↑</span></div>
+<div class="now"><small>Tonight</small><strong>Dinner with new neighbours</strong><p>Arrival · Host gift · Conversation</p><button>View briefing →</button></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="strip"><div class="shell stripin"><span>Not a manners score.</span><span>Not a finishing school.</span><span>Not a rulebook.</span><strong>Practical help for real life.</strong></div></section>
+
+<section class="section shell" id="how">
+<div class="sectionhead"><div class="eyebrow">One companion, five modes</div><h2>Etiquette that starts with your situation.</h2><p>Traditional etiquette tells you the rule. This product helps you decide what to do next.</p></div>
+<div class="cards" id="modeCards"></div>
+</section>
+
+<section class="dark" id="demo">
+<div class="shell demogrid">
+<div class="darkcopy"><div class="eyebrow">Interactive product preview</div><h2>Ask about the moment you're actually in.</h2><p>This demonstrator shows the intended consumer experience. Guidance is curated locally rather than presented as a fully deployed advice engine.</p><div class="pills" id="modePills"></div><div class="samples" id="samples"></div></div>
+<div class="adviser">
+<div class="adviserhead"><div class="left"><span class="mark smallmark">e</span><div><strong>Etiquette</strong><small>Personal adviser</small></div></div><span class="concept">● Concept mode</span></div>
+<div class="askbox"><textarea id="query" rows="4">A friend hasn't replied to three messages. Do I send another?</textarea><div class="asktools"><button onclick="showAnswer()">Ask →</button></div></div>
+<div id="result" class="empty">Ask the adviser to see how the guidance experience feels.</div>
+</div>
+</div>
+</section>
+
+<section class="section shell" id="situations">
+<div class="split"><div><div class="eyebrow">Life, not lessons</div><h2>One place for the social details people usually search separately.</h2></div><p style="color:var(--muted);line-height:1.7">From a wedding invitation to a difficult message, the product connects the occasion, relationship, culture and timing.</p></div>
+<div class="situationgrid">
+<article class="feature big"><div class="num">01</div><h3>Prepare for an occasion</h3><p>Upload an invitation or choose an event. Get one brief covering arrival, dress, gifts, introductions, dining, conversation and follow-up.</p><div class="checks"><span>✓ Dress</span><span>✓ Arrival</span><span>✓ Gift</span><span>✓ Follow-up</span></div></article>
+<article class="feature"><div class="num">02</div><h3>Find the right words</h3><p>Thank-yous, apologies, condolences, invitations, introductions and graceful refusals — shaped around the social obligation.</p></article>
+<article class="feature"><div class="num">03</div><h3>Navigate the world</h3><p>Culture-aware guidance that explains context without pretending every custom is an absolute rule.</p></article>
+<article class="feature"><div class="num">04</div><h3>Remember what matters</h3><p>A future private people layer can remember relationships, preferences and open social obligations only when the user chooses.</p></article>
+<article class="feature"><div class="num">05</div><h3>Practice before it counts</h3><p>Role-play introductions, networking, formal dining and difficult moments in a low-pressure environment.</p></article>
+</div>
+</section>
+
+<section class="principles" id="principles">
+<div class="shell principlesgrid"><div><div class="eyebrow" style="color:#9fb1a7">The product principle</div><h2>Good etiquette should make people feel more at ease — including you.</h2></div><div class="pitems"><div><span>01</span><strong>No judgement</strong><p>No etiquette score. No shaming. No status games.</p></div><div><span>02</span><strong>Context first</strong><p>Culture, relationship, setting and generation can all change the answer.</p></div><div><span>03</span><strong>Human outcome</strong><p>Prefer the action that creates clarity, consideration and the least unnecessary burden.</p></div></div></div>
+</section>
+</main>
+
+<footer class="shell"><a href="#top" class="brand"><span class="mark">e</span><span>etiquette</span></a><span>A product concept for modern social confidence.</span><span>Consumer platform demonstrator · 2026</span></footer>
+
+<script>
+const modes={
+Ask:{eyebrow:"Right now",description:"Get calm, situational guidance for something happening now.",icon:"?",samples:["A friend hasn't replied to three messages. Do I send another?","I've arrived 20 minutes early for dinner — what should I do?","Who should I introduce first at a business dinner?"],answer:{title:"Handle it with warmth, not urgency.",intro:"The aim is to protect the relationship while avoiding unnecessary pressure.",steps:["Pause before sending anything else.","Check whether your last message actually required a reply.","If it matters, send one light follow-up with an easy way to respond."],close:"Good etiquette reduces pressure for both people."}},
+Prepare:{eyebrow:"Before you go",description:"Turn an invitation or occasion into a simple personal briefing.",icon:"◷",samples:["Dinner at a colleague's home","Black-tie wedding in London","First dinner with a partner's parents"],answer:{title:"Your occasion brief is ready.",intro:"A simple plan for before, during and after the event.",steps:["Arrive 5–10 minutes after the stated time for a private dinner unless told otherwise.","Bring a modest host gift that does not create work on arrival.","Send a short thank-you message the following day."],close:"Prepared, without overthinking it."}},
+Say:{eyebrow:"Find the words",description:"Write the message the situation calls for — not just polished prose.",icon:"“",samples:["Decline an invitation warmly","Thank someone after dinner","Apologise without making excuses"],answer:{title:"Warm, direct and easy to receive.",intro:"A good message acknowledges the gesture before giving the answer.",steps:["Thank them genuinely for thinking of you.","Give a clear answer without an elaborate excuse.","End by reinforcing the relationship, not the refusal."],close:"Kindness first. Clarity second. Explanation only if useful."}},
+World:{eyebrow:"Culture aware",description:"Understand local customs, expectations and social cues.",icon:"◎",samples:["Business dinner in Tokyo","Visiting a family home in Dubai","Wedding guest etiquette in Italy"],answer:{title:"Respect the context before the rulebook.",intro:"Customs vary by place, generation and setting, so use local expectations as context rather than absolutes.",steps:["Notice how formal the host or organiser is being.","Follow local cues around greetings, timing and gifts.","When unsure, choose the option that creates the least burden for others."],close:"Cultural awareness is curiosity plus consideration."}},
+Practice:{eyebrow:"Build confidence",description:"Rehearse introductions, dinners and difficult conversations.",icon:"↗",samples:["Joining a conversation at a reception","Handling a sensitive dinner topic","Introducing two people professionally"],answer:{title:"Try a low-pressure opening.",intro:"The goal is not to sound impressive. It is to make the other person comfortable joining in.",steps:["Open with something shared about the setting.","Ask one easy, non-invasive question.","Offer enough about yourself to make the exchange balanced."],close:"Confidence grows through repetition, not performance."}}
+};
+let active="Ask";
+function render(){
+document.getElementById("modeCards").innerHTML=Object.entries(modes).map(([name,m])=>`<button class="card ${name===active?'active':''}" onclick="chooseMode('${name}')"><div class="icon">${m.icon}</div><small>${m.eyebrow}</small><h3>${name}</h3><p>${m.description}</p><span class="arrow">→</span></button>`).join("");
+document.getElementById("modePills").innerHTML=Object.keys(modes).map(name=>`<button class="${name===active?'active':''}" onclick="chooseMode('${name}')">${name}</button>`).join("");
+document.getElementById("samples").innerHTML='<span>Try one:</span>'+modes[active].samples.map((s,i)=>`<button onclick="useSample(${i})">${s} →</button>`).join("");
+}
+function chooseMode(name){active=name;document.getElementById("query").value=modes[name].samples[0];document.getElementById("result").className="empty";document.getElementById("result").innerHTML="Ask the adviser to see how the guidance experience feels.";render()}
+function useSample(i){document.getElementById("query").value=modes[active].samples[i];document.getElementById("result").className="empty";document.getElementById("result").innerHTML="Ask the adviser to see how the guidance experience feels."}
+function showAnswer(){const a=modes[active].answer;document.getElementById("result").className="answer";document.getElementById("result").innerHTML=`<div class="label">✦ A considered approach</div><h3>${a.title}</h3><p>${a.intro}</p><ol>${a.steps.map((s,i)=>`<li><i>${i+1}</i><span>${s}</span></li>`).join("")}</ol><div class="takeaway">${a.close}</div>`}
+function goDemo(){document.getElementById("demo").scrollIntoView({behavior:"smooth"})}
+render();
+</script>
+</body>
+</html>
