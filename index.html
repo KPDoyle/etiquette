@@ -1,204 +1,261 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="theme-color" content="#19352c" />
-<title>Etiquette — Know what to do. Know what to say.</title>
-<meta name="description" content="A modern personal etiquette companion for real life." />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#18342b"/>
+<title>Etiquette — Personal social intelligence</title>
+<meta name="description" content="A private consumer etiquette workspace for real-life situations."/>
 <style>
-:root{--ink:#1d2923;--muted:#68746d;--paper:#faf8f3;--cream:#f1ede3;--deep:#19352c;--sage:#e5ebe2;--line:#dde2db;--white:#fff}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
-button,input,textarea{font:inherit}
-button{cursor:pointer}
-.shell{width:min(1160px,calc(100% - 44px));margin:auto}
-nav{height:78px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700}
-.mark{width:32px;height:32px;border-radius:48% 52% 45% 55%;background:var(--deep);color:white;display:grid;place-items:center;font-family:Georgia,serif;font-style:italic;font-size:20px}
-.navlinks{display:flex;gap:28px;align-items:center}
-.navlinks a{font-size:13px;color:#5d6963;text-decoration:none}
-.navcta{border:0;background:transparent;font-weight:700;font-size:13px;color:var(--ink)}
-.hero{min-height:650px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px;padding:42px 0 70px}
-.kicker,.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#7c8881}
-.hero h1,.section h2,.dark h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.045em;margin:18px 0}
-.hero h1{font-size:clamp(54px,7vw,88px);line-height:.96}
-.hero h1 em{color:#708176;font-weight:400}
-.hero p.lead{font-size:18px;line-height:1.7;color:var(--muted);max-width:630px}
-.ctarow{display:flex;gap:16px;align-items:center;margin-top:30px}
-.primary{background:var(--deep);color:white;border:0;border-radius:12px;padding:15px 20px;font-weight:700}
-.note{font-size:12px;color:#7f8883}
-.note:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#8ba28f;margin-right:8px}
-.visual{position:relative;display:grid;place-items:center;min-height:520px}
-.glow{position:absolute;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,#e2e8dc 0,#f2eee5 60%,transparent 70%)}
-.phone{position:relative;width:318px;background:#101814;border-radius:40px;padding:8px;box-shadow:0 34px 80px rgba(28,45,38,.20);transform:rotate(1.5deg)}
-.screen{background:#f8f7f2;border-radius:32px;min-height:490px;padding:26px 18px 20px}
-.phonebar{height:22px;color:white;font-size:9px;display:flex;justify-content:space-between;align-items:center;padding:0 14px 7px}
-.mini-brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:12px}
-.smallmark{width:26px;height:26px;font-size:16px}
-.hello{font-size:11px;color:#8d958f;margin-top:28px}
-.screen h3{font-family:Georgia,serif;font-size:25px;font-weight:400;line-height:1.08;margin:6px 0 18px}
-.quick{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.quick div{background:white;border:1px solid #e1e4de;border-radius:13px;padding:12px;min-height:76px;display:flex;flex-direction:column;justify-content:space-between}
-.quick b{font-size:16px;font-weight:500}
-.quick span{font-size:9px;line-height:1.3}
-.miniask{margin:12px 0;background:white;border:1px solid #e0e2dd;border-radius:13px;padding:12px;font-size:10px;color:#9ba09d;display:flex;justify-content:space-between}
-.now{background:var(--deep);color:white;border-radius:15px;padding:15px}
-.now small{text-transform:uppercase;letter-spacing:.13em;opacity:.6;font-size:8px}
-.now strong{display:block;font-family:Georgia,serif;font-weight:400;font-size:16px;margin:6px 0}
-.now p{font-size:9px;opacity:.65;margin:0 0 10px}
-.now button{border:0;background:transparent;color:white;padding:0;font-size:9px}
-.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stripin{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:16px;color:#808984;font-size:12px}
-.stripin strong{color:var(--ink)}
-.section{padding:105px 0}
-.sectionhead{max-width:750px}
-.section h2,.dark h2{font-size:clamp(38px,5vw,58px);line-height:1.05}
-.sectionhead p{color:var(--muted);line-height:1.7;max-width:650px}
-.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:48px}
-.card{border:1px solid var(--line);background:transparent;text-align:left;border-radius:18px;padding:20px;min-height:238px;color:var(--ink);transition:.2s;position:relative}
-.card:hover,.card.active{transform:translateY(-3px);background:white;box-shadow:0 16px 40px rgba(30,47,39,.08)}
-.icon{width:38px;height:38px;border-radius:11px;background:var(--sage);display:grid;place-items:center;font-weight:700;margin-bottom:30px}
-.card small{text-transform:uppercase;letter-spacing:.12em;color:#8c948f;font-size:9px}
-.card h3{font-family:Georgia,serif;font-size:25px;font-weight:400;margin:6px 0 11px}
-.card p{font-size:12px;line-height:1.6;color:var(--muted)}
-.arrow{position:absolute;right:18px;bottom:18px;color:#8b958f}
-.dark{background:var(--deep);color:white;padding:98px 0}
-.demogrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:74px}
-.dark .eyebrow{color:#9fb1a7}
-.darkcopy>p{color:#b0bbb5;line-height:1.7}
-.pills{display:flex;flex-wrap:wrap;gap:7px;margin:26px 0}
-.pills button{border:1px solid #466157;background:transparent;color:#b9c5bf;border-radius:999px;padding:8px 12px;font-size:11px}
-.pills button.active{background:#e8eee7;color:var(--deep);border-color:#e8eee7}
-.samples{display:flex;flex-direction:column;gap:3px}
-.samples span{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:#82988e;margin-bottom:4px}
-.samples button{text-align:left;border:0;border-bottom:1px solid #355047;background:transparent;color:#d2dbd6;padding:11px 0;font-size:12px}
-.adviser{background:#f8f7f2;color:var(--ink);border-radius:24px;padding:24px;min-height:555px;box-shadow:0 24px 70px rgba(0,0,0,.18)}
-.adviserhead{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid #e0e2dd}
-.adviserhead .left{display:flex;gap:10px;align-items:center}
-.adviserhead strong{display:block;font-size:12px}
-.adviserhead small{font-size:9px;color:#879089}
-.concept{font-size:9px;color:#7e8a82}
-.askbox{background:white;border:1px solid #dfe2dc;border-radius:16px;padding:14px;margin-top:20px}
-.askbox textarea{width:100%;border:0;resize:none;outline:0;background:transparent;color:var(--ink);font-size:15px;line-height:1.5}
-.asktools{display:flex;justify-content:flex-end}
-.asktools button{border:0;background:var(--deep);color:white;border-radius:9px;padding:9px 13px;font-size:11px;font-weight:700}
-.empty{height:305px;display:grid;place-items:center;text-align:center;color:#98a19c;font-size:12px}
-.answer{padding:24px 4px 0}
-.answer .label{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:#83928a}
-.answer h3{font-family:Georgia,serif;font-size:27px;font-weight:400;margin:10px 0}
-.answer>p{font-size:12px;line-height:1.6;color:#6d7972}
-.answer ol{list-style:none;margin:18px 0;padding:0}
-.answer li{display:flex;gap:10px;padding:12px 0;border-top:1px solid #e1e3de;font-size:11px;line-height:1.5}
-.answer li i{font-style:normal;flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:#e8ede6;display:grid;place-items:center;font-size:9px}
-.takeaway{background:#e8eee7;border-radius:10px;padding:11px 12px;font-size:10px}
-.split{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:end}
-.situationgrid{display:grid;grid-template-columns:1.25fr .75fr .75fr;gap:12px;margin-top:52px}
-.feature{border:1px solid var(--line);border-radius:18px;padding:25px;min-height:230px}
-.feature.big{grid-row:span 2;background:var(--cream);min-height:472px;display:flex;flex-direction:column}
-.feature .num{font-size:10px;color:#969d98;letter-spacing:.12em}
-.feature h3{font-family:Georgia,serif;font-size:25px;font-weight:400;margin:28px 0 10px}
-.feature p{font-size:12px;line-height:1.7;color:var(--muted)}
-.checks{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.checks span{background:white;border-radius:10px;padding:12px;font-size:11px}
-.principles{background:#243b32;color:white;padding:100px 0}
-.principlesgrid{display:grid;grid-template-columns:1fr 1fr;gap:90px}
-.principles h2{max-width:520px}
-.pitems>div{display:grid;grid-template-columns:42px 145px 1fr;gap:12px;border-top:1px solid #4a6057;padding:21px 0}
-.pitems span{font-size:10px;color:#83958d}
-.pitems strong{font-family:Georgia,serif;font-weight:400;font-size:18px}
-.pitems p{margin:0;color:#afbbb5;font-size:11px;line-height:1.6}
-footer{min-height:145px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#89928d;font-size:11px}
-@media(max-width:900px){.navlinks a{display:none}.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.demogrid,.split,.principlesgrid{grid-template-columns:1fr;gap:44px}.situationgrid{grid-template-columns:1fr 1fr}.feature.big{grid-column:span 2;grid-row:auto;min-height:340px}.stripin{flex-wrap:wrap;padding:20px 0}.pitems>div{grid-template-columns:35px 130px 1fr}}
-@media(max-width:620px){.shell{width:calc(100% - 28px)}nav{height:68px}.hero{padding-top:48px;gap:18px}.hero h1{font-size:52px}.hero p.lead{font-size:16px}.ctarow{align-items:flex-start;flex-direction:column}.visual{min-height:500px;overflow:hidden}.phone{width:286px}.glow{width:380px;height:380px}.stripin{justify-content:flex-start}.section{padding:78px 0}.cards{grid-template-columns:1fr}.card{min-height:205px}.dark{padding:78px 0}.adviser{padding:16px;min-height:520px}.situationgrid{grid-template-columns:1fr}.feature.big{grid-column:auto;min-height:375px}.pitems>div{grid-template-columns:30px 1fr}.pitems p{grid-column:2}.principles{padding:78px 0}footer{padding:35px 0;min-height:auto;flex-direction:column;align-items:flex-start}}
+:root{--ink:#1f2b25;--muted:#6f7973;--paper:#f7f5ef;--card:#fff;--line:#dde2dc;--deep:#18342b;--deep2:#25483b;--sage:#e7ede6;--cream:#efe9dd;--danger:#9d4b45;--shadow:0 18px 50px rgba(34,52,43,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.app{min-height:100vh;display:grid;grid-template-columns:250px 1fr}.sidebar{position:sticky;top:0;height:100vh;padding:26px 18px;border-right:1px solid var(--line);background:#f5f2eb;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:10px;font-weight:800;margin:0 10px 28px}.mark{width:34px;height:34px;border-radius:48% 52% 45% 55%;display:grid;place-items:center;background:var(--deep);color:white;font:italic 22px Georgia,serif}.beta{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#7b8880;border:1px solid #cfd7d0;border-radius:999px;padding:4px 7px}.nav{display:grid;gap:6px}.nav button{border:0;background:transparent;text-align:left;border-radius:11px;padding:11px 12px;color:#65716b;font-size:13px;display:flex;gap:10px;align-items:center}.nav button.active,.nav button:hover{background:#e9eee8;color:var(--deep);font-weight:700}.nav .sep{height:1px;background:var(--line);margin:10px 8px}.sidebarfoot{margin-top:auto;padding:14px 10px 0;color:#8a938e;font-size:10px;line-height:1.5}.workspace{min-width:0}.topbar{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 34px;background:rgba(247,245,239,.92);backdrop-filter:blur(10px);position:sticky;top:0;z-index:10}.topbar h1{font:400 21px Georgia,serif;margin:0}.status{font-size:10px;color:#758079;display:flex;gap:8px;align-items:center}.dot{width:7px;height:7px;border-radius:50%;background:#739078}.content{width:min(1120px,calc(100% - 54px));margin:0 auto;padding:42px 0 80px}.view{display:none}.view.active{display:block}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:#7c8780}.hero h2,.sectiontitle{font:400 clamp(38px,5vw,64px)/1.02 Georgia,serif;letter-spacing:-.04em;margin:13px 0}.hero p{max-width:720px;color:var(--muted);font-size:17px;line-height:1.7}.quickgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:34px 0}.quickcard{border:1px solid var(--line);background:var(--card);border-radius:17px;padding:20px;text-align:left;min-height:155px;box-shadow:0 8px 26px rgba(32,49,41,.03)}.quickcard:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.quickcard b{font-family:Georgia,serif;font-size:24px;font-weight:400;display:block;margin:18px 0 7px}.quickcard span{font-size:11px;color:var(--muted);line-height:1.55}.badge{width:36px;height:36px;border-radius:11px;background:var(--sage);display:grid;place-items:center}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}.panel h3{font:400 24px Georgia,serif;margin:0 0 6px}.panel p.helper{color:var(--muted);font-size:12px;line-height:1.6;margin:0 0 20px}.stack{display:grid;gap:12px}.field label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:#7c8781;margin-bottom:7px}.field input,.field textarea,.field select,.search{width:100%;border:1px solid #dce1dc;background:#fbfbf8;border-radius:11px;padding:12px 13px;color:var(--ink);outline:none}.field textarea{resize:vertical;min-height:100px}.field input:focus,.field textarea:focus,.field select:focus,.search:focus{border-color:#98aa9f;box-shadow:0 0 0 3px rgba(102,130,113,.10)}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.primary,.secondary,.ghost,.danger{border-radius:11px;padding:11px 15px;font-weight:800;font-size:12px}.primary{background:var(--deep);color:white;border:1px solid var(--deep)}.secondary{background:var(--sage);color:var(--deep);border:1px solid var(--sage)}.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}.danger{background:#fff4f3;color:var(--danger);border:1px solid #efd7d4}.answer{margin-top:18px;background:#f2f6f0;border-radius:16px;padding:20px}.answer h4{font:400 25px Georgia,serif;margin:4px 0 8px}.answer p{font-size:12px;color:#5f6c65;line-height:1.65}.steps{display:grid;gap:9px;margin-top:16px}.step{display:grid;grid-template-columns:28px 1fr;gap:10px;padding-top:10px;border-top:1px solid #dce5dc;font-size:12px;line-height:1.55}.step i{width:25px;height:25px;border-radius:50%;background:white;display:grid;place-items:center;font-style:normal;font-size:10px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:#fafaf7;border-radius:999px;padding:8px 11px;font-size:11px}.chip.active{background:var(--deep);border-color:var(--deep);color:white}.list{display:grid;gap:10px}.item{background:white;border:1px solid var(--line);border-radius:14px;padding:16px}.itemtop{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.item h4{margin:0 0 5px;font-size:14px}.meta{font-size:10px;color:#87908b}.item p{font-size:11px;color:#66726b;line-height:1.55;margin:9px 0 0}.empty{border:1px dashed #cfd7d1;border-radius:14px;padding:28px;text-align:center;color:#8a948e;font-size:12px}.countrygrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.country{border:1px solid var(--line);background:white;border-radius:15px;padding:16px;text-align:left}.country:hover{background:#f1f5ef}.country strong{display:block;font-size:14px;margin-bottom:4px}.country span{font-size:10px;color:#87908b}.worldcard{margin-top:18px;background:var(--deep);color:white;border-radius:19px;padding:24px}.worldcard h3{font:400 30px Georgia,serif;margin:0 0 8px}.worldcard p,.worldcard li{color:#c2cec8;font-size:12px;line-height:1.65}.worldcols{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.worldcols div{border-top:1px solid #466157;padding-top:12px}.worldcols strong{font-size:11px;display:block;margin-bottom:5px}.practicecard{background:white;border:1px solid var(--line);border-radius:18px;padding:24px}.scenario{font:400 28px Georgia,serif;margin:7px 0 18px}.choice{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fbfbf8;border-radius:12px;padding:13px;margin:9px 0;font-size:12px}.choice:hover{border-color:#91a398}.feedback{margin-top:14px;padding:14px;border-radius:12px;background:#eef3ed;font-size:12px;line-height:1.6}.progress{height:8px;background:#e2e6e1;border-radius:99px;overflow:hidden}.progress span{display:block;height:100%;background:var(--deep)}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.kpi{background:white;border:1px solid var(--line);border-radius:14px;padding:16px}.kpi b{font:400 28px Georgia,serif}.kpi span{display:block;font-size:10px;color:#84908a;margin-top:4px}.messagebox{background:#f3f6f1;border:1px solid #dce4dc;border-radius:14px;padding:16px;white-space:pre-wrap;font-size:13px;line-height:1.65}.privacy{background:#eef3ed;border-radius:14px;padding:15px;font-size:11px;color:#68746d;line-height:1.6}.toast{position:fixed;right:24px;bottom:24px;background:#162f27;color:white;padding:12px 16px;border-radius:12px;font-size:12px;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);pointer-events:none;transition:.2s;z-index:50}.toast.show{opacity:1;transform:none}.mobilebar{display:none}
+@media(max-width:900px){.app{grid-template-columns:1fr}.sidebar{display:none}.mobilebar{display:flex;position:fixed;z-index:30;left:10px;right:10px;bottom:10px;background:#18342b;border-radius:16px;padding:8px;justify-content:space-around;box-shadow:0 18px 45px rgba(0,0,0,.24)}.mobilebar button{border:0;background:transparent;color:#d8e0dc;font-size:9px;padding:8px 5px}.mobilebar button.active{background:#2d5143;border-radius:10px;color:white}.topbar{padding:0 18px}.content{width:min(100% - 28px,900px);padding-bottom:110px}.quickgrid{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.countrygrid{grid-template-columns:1fr 1fr}.worldcols{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:560px){.quickgrid,.countrygrid,.kpis{grid-template-columns:1fr}.hero h2{font-size:46px}.content{padding-top:28px}.panel{padding:18px}.topbar .status span:last-child{display:none}}
 </style>
 </head>
 <body>
-<nav class="shell">
-<a href="#top" class="brand"><span class="mark">e</span><span>etiquette</span></a>
-<div class="navlinks"><a href="#how">How it works</a><a href="#situations">Situations</a><a href="#principles">Principles</a><button class="navcta" onclick="goDemo()">Try the concept →</button></div>
-</nav>
-
-<main>
-<section class="hero shell" id="top">
-<div>
-<div class="kicker">✦ Modern social intelligence</div>
-<h1>Know what to do.<br><em>Know what to say.</em></h1>
-<p class="lead">A personal etiquette companion for dinners, messages, travel, work, family and all the moments nobody quite teaches you how to handle.</p>
-<div class="ctarow"><button class="primary" onclick="goDemo()">Ask Etiquette →</button><span class="note">Product preview · no account needed</span></div>
+<div class="app">
+<aside class="sidebar">
+<div class="brand"><span class="mark">e</span><span>etiquette</span><span class="beta">beta</span></div>
+<div class="nav" id="sideNav">
+<button data-view="home" class="active">⌂ Home</button>
+<button data-view="ask">? Ask</button>
+<button data-view="prepare">◷ Prepare</button>
+<button data-view="say">“ Say</button>
+<button data-view="world">◎ World</button>
+<button data-view="practice">↗ Practice</button>
+<div class="sep"></div>
+<button data-view="people">♡ People</button>
+<button data-view="saved">▣ Saved</button>
+<button data-view="settings">⚙ Settings</button>
 </div>
-<div class="visual">
-<div class="glow"></div>
-<div class="phone">
-<div class="phonebar"><span>9:41</span><span>●</span><span>•••</span></div>
-<div class="screen">
-<div class="mini-brand"><span class="mark smallmark">e</span> etiquette</div>
-<div class="hello">Good evening.</div>
-<h3>What are you navigating?</h3>
-<div class="quick"><div><b>?</b><span>Something awkward</span></div><div><b>◷</b><span>An occasion</span></div><div><b>“</b><span>A message</span></div><div><b>◎</b><span>Another culture</span></div></div>
-<div class="miniask"><span>Ask anything...</span><span>⌁ &nbsp; ↑</span></div>
-<div class="now"><small>Tonight</small><strong>Dinner with new neighbours</strong><p>Arrival · Host gift · Conversation</p><button>View briefing →</button></div>
+<div class="sidebarfoot">Your saved data stays in this browser unless you export it.</div>
+</aside>
+<section class="workspace">
+<header class="topbar"><h1 id="pageTitle">Home</h1><div class="status"><span class="dot"></span><span>Local private workspace</span></div></header>
+<main class="content">
+<section class="view active" id="view-home">
+<div class="hero"><div class="eyebrow">Personal social intelligence</div><h2>Know what to do.<br><em style="color:#74857a">Know what to say.</em></h2><p>Plan occasions, handle awkward moments, draft the right message, understand cultural context and practise before it counts.</p></div>
+<div class="quickgrid">
+<button class="quickcard" onclick="go('ask')"><div class="badge">?</div><b>Ask now</b><span>Get situational guidance for something happening right now.</span></button>
+<button class="quickcard" onclick="go('prepare')"><div class="badge">◷</div><b>Prepare</b><span>Build an occasion brief with timing, dress, gifts and follow-up.</span></button>
+<button class="quickcard" onclick="go('say')"><div class="badge">“</div><b>Find the words</b><span>Draft thank-yous, apologies, declines, condolences and more.</span></button>
+<button class="quickcard" onclick="go('world')"><div class="badge">◎</div><b>World</b><span>Explore culture-aware etiquette for common travel situations.</span></button>
 </div>
-</div>
-</div>
-</section>
-
-<section class="strip"><div class="shell stripin"><span>Not a manners score.</span><span>Not a finishing school.</span><span>Not a rulebook.</span><strong>Practical help for real life.</strong></div></section>
-
-<section class="section shell" id="how">
-<div class="sectionhead"><div class="eyebrow">One companion, five modes</div><h2>Etiquette that starts with your situation.</h2><p>Traditional etiquette tells you the rule. This product helps you decide what to do next.</p></div>
-<div class="cards" id="modeCards"></div>
-</section>
-
-<section class="dark" id="demo">
-<div class="shell demogrid">
-<div class="darkcopy"><div class="eyebrow">Interactive product preview</div><h2>Ask about the moment you're actually in.</h2><p>This demonstrator shows the intended consumer experience. Guidance is curated locally rather than presented as a fully deployed advice engine.</p><div class="pills" id="modePills"></div><div class="samples" id="samples"></div></div>
-<div class="adviser">
-<div class="adviserhead"><div class="left"><span class="mark smallmark">e</span><div><strong>Etiquette</strong><small>Personal adviser</small></div></div><span class="concept">● Concept mode</span></div>
-<div class="askbox"><textarea id="query" rows="4">A friend hasn't replied to three messages. Do I send another?</textarea><div class="asktools"><button onclick="showAnswer()">Ask →</button></div></div>
-<div id="result" class="empty">Ask the adviser to see how the guidance experience feels.</div>
-</div>
+<div class="grid2">
+<div class="panel"><h3>Upcoming plans</h3><p class="helper">Your saved occasion briefs.</p><div id="homePlans" class="list"></div></div>
+<div class="panel"><h3>Recent saves</h3><p class="helper">Advice and messages you chose to keep.</p><div id="homeSaves" class="list"></div></div>
 </div>
 </section>
 
-<section class="section shell" id="situations">
-<div class="split"><div><div class="eyebrow">Life, not lessons</div><h2>One place for the social details people usually search separately.</h2></div><p style="color:var(--muted);line-height:1.7">From a wedding invitation to a difficult message, the product connects the occasion, relationship, culture and timing.</p></div>
-<div class="situationgrid">
-<article class="feature big"><div class="num">01</div><h3>Prepare for an occasion</h3><p>Upload an invitation or choose an event. Get one brief covering arrival, dress, gifts, introductions, dining, conversation and follow-up.</p><div class="checks"><span>✓ Dress</span><span>✓ Arrival</span><span>✓ Gift</span><span>✓ Follow-up</span></div></article>
-<article class="feature"><div class="num">02</div><h3>Find the right words</h3><p>Thank-yous, apologies, condolences, invitations, introductions and graceful refusals — shaped around the social obligation.</p></article>
-<article class="feature"><div class="num">03</div><h3>Navigate the world</h3><p>Culture-aware guidance that explains context without pretending every custom is an absolute rule.</p></article>
-<article class="feature"><div class="num">04</div><h3>Remember what matters</h3><p>A future private people layer can remember relationships, preferences and open social obligations only when the user chooses.</p></article>
-<article class="feature"><div class="num">05</div><h3>Practice before it counts</h3><p>Role-play introductions, networking, formal dining and difficult moments in a low-pressure environment.</p></article>
+<section class="view" id="view-ask">
+<div class="eyebrow">Ask Etiquette</div><h2 class="sectiontitle">What are you navigating?</h2>
+<div class="grid2">
+<div class="panel"><h3>Describe the situation</h3><p class="helper">The built-in adviser uses context and common etiquette patterns. It does not pretend to be a live human expert.</p>
+<div class="stack">
+<div class="field"><label>Context</label><select id="askContext"><option>Social</option><option>Family</option><option>Work</option><option>Dating</option><option>Travel</option><option>Hosting</option></select></div>
+<div class="field"><label>Your question</label><textarea id="askQuestion" placeholder="e.g. I've been invited to dinner at 7.30 and don't know the hosts well. Should I take something?"></textarea></div>
+<div class="row"><button class="primary" onclick="askEtiquette()">Get guidance</button><button class="ghost" onclick="fillAskExample()">Use example</button></div>
+</div></div>
+<div class="panel"><h3>Guidance</h3><p class="helper">Practical, non-judgemental and context first.</p><div id="askResult" class="empty">Your guidance will appear here.</div></div>
 </div>
 </section>
 
-<section class="principles" id="principles">
-<div class="shell principlesgrid"><div><div class="eyebrow" style="color:#9fb1a7">The product principle</div><h2>Good etiquette should make people feel more at ease — including you.</h2></div><div class="pitems"><div><span>01</span><strong>No judgement</strong><p>No etiquette score. No shaming. No status games.</p></div><div><span>02</span><strong>Context first</strong><p>Culture, relationship, setting and generation can all change the answer.</p></div><div><span>03</span><strong>Human outcome</strong><p>Prefer the action that creates clarity, consideration and the least unnecessary burden.</p></div></div></div>
+<section class="view" id="view-prepare">
+<div class="eyebrow">Prepare</div><h2 class="sectiontitle">Build an occasion brief.</h2>
+<div class="grid2">
+<div class="panel"><h3>Occasion</h3><div class="stack">
+<div class="field"><label>Type</label><select id="prepType"><option>Dinner at someone's home</option><option>Wedding</option><option>Funeral or memorial</option><option>Business dinner</option><option>First date</option><option>Party or reception</option><option>House guest</option><option>Religious occasion</option></select></div>
+<div class="field"><label>Date</label><input id="prepDate" type="date"/></div>
+<div class="field"><label>Relationship</label><input id="prepRelation" placeholder="e.g. new neighbours, client, close friend"/></div>
+<div class="field"><label>Location / culture</label><input id="prepLocation" placeholder="e.g. London, Tokyo, Dubai"/></div>
+<div class="field"><label>Formality</label><select id="prepFormal"><option>Relaxed</option><option selected>Smart / polished</option><option>Formal</option><option>Very formal</option></select></div>
+<button class="primary" onclick="generatePlan()">Create briefing</button>
+</div></div>
+<div class="panel"><h3>Your briefing</h3><p class="helper">A practical before / during / after plan.</p><div id="prepResult" class="empty">Complete the occasion details to generate a briefing.</div></div>
+</div>
+</section>
+
+<section class="view" id="view-say">
+<div class="eyebrow">Say</div><h2 class="sectiontitle">Find the right words.</h2>
+<div class="grid2">
+<div class="panel"><h3>Message builder</h3><div class="stack">
+<div class="field"><label>Purpose</label><select id="sayPurpose"><option>Thank someone</option><option>Decline an invitation</option><option>Apologise</option><option>Offer condolences</option><option>Congratulate someone</option><option>Introduce two people</option><option>Follow up after meeting</option><option>Ask for a favour</option></select></div>
+<div class="field"><label>Recipient</label><input id="sayRecipient" placeholder="e.g. Sarah"/></div>
+<div class="field"><label>Tone</label><select id="sayTone"><option>Warm</option><option>Concise</option><option>Formal</option><option>Friendly</option></select></div>
+<div class="field"><label>Context</label><textarea id="sayContext" placeholder="What happened? Include any detail you want reflected."></textarea></div>
+<button class="primary" onclick="draftMessage()">Draft message</button>
+</div></div>
+<div class="panel"><h3>Draft</h3><p class="helper">Edit the wording before copying or saving.</p><div id="sayResult" class="empty">Your draft will appear here.</div></div>
+</div>
+</section>
+
+<section class="view" id="view-world">
+<div class="eyebrow">World</div><h2 class="sectiontitle">Culture-aware context.</h2>
+<div class="panel"><h3>Explore a destination</h3><p class="helper">Useful orientation, not absolute rules. Local norms vary by setting, generation and community.</p><input class="search" id="worldSearch" placeholder="Search country..." oninput="renderCountries()"/><div id="countryGrid" class="countrygrid"></div><div id="worldResult"></div></div>
+</section>
+
+<section class="view" id="view-practice">
+<div class="eyebrow">Practice</div><h2 class="sectiontitle">Rehearse before it counts.</h2>
+<div class="grid2"><div class="practicecard"><div class="meta">SCENARIO <span id="scenarioIndex">1</span> OF <span id="scenarioTotal">4</span></div><div class="scenario" id="scenarioText"></div><div id="scenarioChoices"></div><div id="scenarioFeedback"></div><div class="row" style="margin-top:16px"><button class="secondary" onclick="nextScenario()">Next scenario →</button></div></div><div class="panel"><h3>Your progress</h3><p class="helper">Practice is about confidence, not scoring.</p><div class="progress"><span id="practiceProgress" style="width:0%"></span></div><div class="kpis"><div class="kpi"><b id="doneCount">0</b><span>completed</span></div><div class="kpi"><b id="gentleCount">0</b><span>good calls</span></div><div class="kpi"><b id="streakCount">0</b><span>current run</span></div></div><p class="privacy">There is no etiquette score. These counters only show how much of the practice module you have explored.</p></div></div>
+</section>
+
+<section class="view" id="view-people">
+<div class="eyebrow">People</div><h2 class="sectiontitle">Remember what matters.</h2>
+<div class="grid2"><div class="panel"><h3>Add a person</h3><p class="helper">Keep only the details you find useful.</p><div class="stack">
+<div class="field"><label>Name</label><input id="personName"/></div>
+<div class="field"><label>Relationship</label><input id="personRelation" placeholder="friend, client, neighbour..."/></div>
+<div class="field"><label>Preferences</label><input id="personPrefs" placeholder="e.g. doesn't drink, vegetarian"/></div>
+<div class="field"><label>Notes</label><textarea id="personNotes" placeholder="e.g. invited us to dinner in May"></textarea></div>
+<button class="primary" onclick="addPerson()">Save person</button>
+</div></div><div class="panel"><h3>Your people</h3><p class="helper">Stored only in this browser.</p><div id="peopleList" class="list"></div></div></div>
+</section>
+
+<section class="view" id="view-saved">
+<div class="eyebrow">Saved</div><h2 class="sectiontitle">Your etiquette workspace.</h2>
+<div class="panel"><div class="row" style="justify-content:space-between"><div><h3>Saved items</h3><p class="helper">Advice, messages and occasion briefs.</p></div><div class="chips"><button class="chip active" data-filter="all" onclick="filterSaved('all',this)">All</button><button class="chip" data-filter="advice" onclick="filterSaved('advice',this)">Advice</button><button class="chip" data-filter="message" onclick="filterSaved('message',this)">Messages</button><button class="chip" data-filter="plan" onclick="filterSaved('plan',this)">Plans</button></div></div><div id="savedList" class="list"></div></div>
+</section>
+
+<section class="view" id="view-settings">
+<div class="eyebrow">Settings</div><h2 class="sectiontitle">Privacy and data.</h2>
+<div class="grid2"><div class="panel"><h3>Local-first by design</h3><p class="helper">This demonstrator stores your data in this browser using localStorage. It does not transmit your people, plans or notes to a server.</p><div class="stack"><button class="secondary" onclick="exportData()">Export my data</button><button class="ghost" onclick="document.getElementById('importFile').click()">Import data</button><input id="importFile" type="file" accept="application/json" style="display:none" onchange="importData(event)"/></div></div><div class="panel"><h3>Reset</h3><p class="helper">Delete all locally saved people, plans, advice, messages and practice progress.</p><button class="danger" onclick="resetData()">Delete local data</button></div></div>
 </section>
 </main>
+</section>
+</div>
 
-<footer class="shell"><a href="#top" class="brand"><span class="mark">e</span><span>etiquette</span></a><span>A product concept for modern social confidence.</span><span>Consumer platform demonstrator · 2026</span></footer>
+<nav class="mobilebar" id="mobileNav"><button data-view="home" class="active">Home</button><button data-view="ask">Ask</button><button data-view="prepare">Prepare</button><button data-view="say">Say</button><button data-view="world">World</button><button data-view="saved">Saved</button></nav>
+<div class="toast" id="toast">Saved</div>
 
 <script>
-const modes={
-Ask:{eyebrow:"Right now",description:"Get calm, situational guidance for something happening now.",icon:"?",samples:["A friend hasn't replied to three messages. Do I send another?","I've arrived 20 minutes early for dinner — what should I do?","Who should I introduce first at a business dinner?"],answer:{title:"Handle it with warmth, not urgency.",intro:"The aim is to protect the relationship while avoiding unnecessary pressure.",steps:["Pause before sending anything else.","Check whether your last message actually required a reply.","If it matters, send one light follow-up with an easy way to respond."],close:"Good etiquette reduces pressure for both people."}},
-Prepare:{eyebrow:"Before you go",description:"Turn an invitation or occasion into a simple personal briefing.",icon:"◷",samples:["Dinner at a colleague's home","Black-tie wedding in London","First dinner with a partner's parents"],answer:{title:"Your occasion brief is ready.",intro:"A simple plan for before, during and after the event.",steps:["Arrive 5–10 minutes after the stated time for a private dinner unless told otherwise.","Bring a modest host gift that does not create work on arrival.","Send a short thank-you message the following day."],close:"Prepared, without overthinking it."}},
-Say:{eyebrow:"Find the words",description:"Write the message the situation calls for — not just polished prose.",icon:"“",samples:["Decline an invitation warmly","Thank someone after dinner","Apologise without making excuses"],answer:{title:"Warm, direct and easy to receive.",intro:"A good message acknowledges the gesture before giving the answer.",steps:["Thank them genuinely for thinking of you.","Give a clear answer without an elaborate excuse.","End by reinforcing the relationship, not the refusal."],close:"Kindness first. Clarity second. Explanation only if useful."}},
-World:{eyebrow:"Culture aware",description:"Understand local customs, expectations and social cues.",icon:"◎",samples:["Business dinner in Tokyo","Visiting a family home in Dubai","Wedding guest etiquette in Italy"],answer:{title:"Respect the context before the rulebook.",intro:"Customs vary by place, generation and setting, so use local expectations as context rather than absolutes.",steps:["Notice how formal the host or organiser is being.","Follow local cues around greetings, timing and gifts.","When unsure, choose the option that creates the least burden for others."],close:"Cultural awareness is curiosity plus consideration."}},
-Practice:{eyebrow:"Build confidence",description:"Rehearse introductions, dinners and difficult conversations.",icon:"↗",samples:["Joining a conversation at a reception","Handling a sensitive dinner topic","Introducing two people professionally"],answer:{title:"Try a low-pressure opening.",intro:"The goal is not to sound impressive. It is to make the other person comfortable joining in.",steps:["Open with something shared about the setting.","Ask one easy, non-invasive question.","Offer enough about yourself to make the exchange balanced."],close:"Confidence grows through repetition, not performance."}}
-};
-let active="Ask";
-function render(){
-document.getElementById("modeCards").innerHTML=Object.entries(modes).map(([name,m])=>`<button class="card ${name===active?'active':''}" onclick="chooseMode('${name}')"><div class="icon">${m.icon}</div><small>${m.eyebrow}</small><h3>${name}</h3><p>${m.description}</p><span class="arrow">→</span></button>`).join("");
-document.getElementById("modePills").innerHTML=Object.keys(modes).map(name=>`<button class="${name===active?'active':''}" onclick="chooseMode('${name}')">${name}</button>`).join("");
-document.getElementById("samples").innerHTML='<span>Try one:</span>'+modes[active].samples.map((s,i)=>`<button onclick="useSample(${i})">${s} →</button>`).join("");
+const STORE_KEY='etiquette_workspace_v2';
+const defaultState={people:[],saved:[],practice:{done:0,good:0,streak:0,index:0}};
+let state=loadState();
+let savedFilter='all';
+function loadState(){try{return Object.assign({},defaultState,JSON.parse(localStorage.getItem(STORE_KEY)||'{}'))}catch(e){return JSON.parse(JSON.stringify(defaultState))}}
+function persist(){localStorage.setItem(STORE_KEY,JSON.stringify(state));renderHome();renderPeople();renderSaved();renderPracticeStats()}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)}
+function go(view){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById('view-'+view).classList.add('active');document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));document.getElementById('pageTitle').textContent=view.charAt(0).toUpperCase()+view.slice(1);window.scrollTo({top:0,behavior:'smooth'});if(view==='home')renderHome();if(view==='saved')renderSaved();if(view==='people')renderPeople();if(view==='world')renderCountries();if(view==='practice')renderScenario()}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.view)));
+
+const advicePatterns=[
+{keys:['reply','message','text','ghost','respond','response'],title:'Reduce the pressure before you add another message.',steps:['Check whether your last message actually required a reply.','Give the other person reasonable space before following up.','If it matters, send one light, practical follow-up that makes responding easy.'],close:'Good etiquette protects the relationship without creating unnecessary urgency.'},
+{keys:['dinner','host','hosting','home','gift','invited'],title:'Be easy to host.',steps:['For a private dinner, arrive close to the stated time rather than very early.','A small host gift is thoughtful when appropriate, but choose something that creates no work on arrival.','Follow the host’s cues during the evening and send a short thank-you afterwards.'],close:'The best guest behaviour makes the host’s job easier.'},
+{keys:['wedding','bride','groom','ceremony'],title:'Let the couple’s plans set the tone.',steps:['Follow the invitation on dress, timing, guests and children rather than assuming.','RSVP promptly and avoid creating extra decisions for the couple.','Keep any special request proportionate to the relationship and the occasion.'],close:'At weddings, consideration usually means reducing complexity for the hosts.'},
+{keys:['funeral','condolence','bereavement','memorial','died','death'],title:'Simple and sincere is usually enough.',steps:['Acknowledge the loss directly without trying to fix it.','Keep the focus on the bereaved person and the person who died.','Offer practical help only if you can genuinely provide it.'],close:'Presence and sincerity matter more than perfect wording.'},
+{keys:['dress','black tie','smart casual','formal','wear'],title:'Use the invitation and venue as your anchors.',steps:['Treat a stated dress code as the strongest signal.','If the wording is vague, consider venue, time of day and host style.','When between two levels of formality, choose the more polished option without becoming conspicuous.'],close:'Aim to respect the occasion, not to outperform it.'},
+{keys:['introduce','introduction','name','meet'],title:'Make the introduction useful, not ceremonial.',steps:['Say both names clearly.','Add one piece of context that gives them an easy starting point.','If titles matter in the setting, use them until invited to do otherwise.'],close:'A good introduction removes the work of starting the conversation.'},
+{keys:['tip','tipping','service charge'],title:'Check the local convention first.',steps:['Look for an included service charge before adding anything.','In another country, use local norms rather than exporting your home convention.','When service is personal or exceptional, discretion matters more than display.'],close:'Tipping is highly cultural, so local context wins.'},
+{keys:['apolog','sorry','mistake','offend'],title:'Own the effect without over-explaining.',steps:['Name what you are apologising for.','Acknowledge the effect on the other person.','Avoid turning the apology into a defence; offer a practical repair if one exists.'],close:'A useful apology is clear, proportionate and focused on repair.'}
+];
+function askEtiquette(){
+ const q=document.getElementById('askQuestion').value.trim(); const ctx=document.getElementById('askContext').value;
+ if(!q){toast('Add a question first');return}
+ const lower=q.toLowerCase(); let match=advicePatterns.find(p=>p.keys.some(k=>lower.includes(k)));
+ if(!match)match={title:'Choose the option that creates the least social friction.',steps:['Start with the relationship: what level of warmth, formality or obligation already exists?','Use the setting as your second cue: private, public, professional and family situations carry different expectations.','When no convention is clear, favour clarity, consideration and the option that puts the least unnecessary burden on the other person.'],close:'Etiquette is most useful as applied judgement, not a rigid rulebook.'};
+ const html='<div class="answer"><div class="meta">CONTEXT · '+escapeHtml(ctx)+'</div><h4>'+match.title+'</h4><p>'+escapeHtml(q)+'</p><div class="steps">'+match.steps.map((s,i)=>'<div class="step"><i>'+(i+1)+'</i><span>'+s+'</span></div>').join('')+'</div><p><strong>'+match.close+'</strong></p><div class="row"><button class="secondary" onclick="saveAdvice()">Save advice</button></div></div>';
+ document.getElementById('askResult').className='';document.getElementById('askResult').innerHTML=html;
+ window.currentAdvice={type:'advice',title:match.title,body:match.steps.join(' '),question:q,created:new Date().toISOString()};
 }
-function chooseMode(name){active=name;document.getElementById("query").value=modes[name].samples[0];document.getElementById("result").className="empty";document.getElementById("result").innerHTML="Ask the adviser to see how the guidance experience feels.";render()}
-function useSample(i){document.getElementById("query").value=modes[active].samples[i];document.getElementById("result").className="empty";document.getElementById("result").innerHTML="Ask the adviser to see how the guidance experience feels."}
-function showAnswer(){const a=modes[active].answer;document.getElementById("result").className="answer";document.getElementById("result").innerHTML=`<div class="label">✦ A considered approach</div><h3>${a.title}</h3><p>${a.intro}</p><ol>${a.steps.map((s,i)=>`<li><i>${i+1}</i><span>${s}</span></li>`).join("")}</ol><div class="takeaway">${a.close}</div>`}
-function goDemo(){document.getElementById("demo").scrollIntoView({behavior:"smooth"})}
-render();
+function fillAskExample(){document.getElementById('askQuestion').value="I've been invited to dinner at 7.30 and don't know the hosts well. Should I take something?"}
+function saveAdvice(){if(!window.currentAdvice)return;state.saved.unshift({...window.currentAdvice,id:uid()});persist();toast('Advice saved')}
+
+function generatePlan(){
+ const type=document.getElementById('prepType').value,date=document.getElementById('prepDate').value,relation=document.getElementById('prepRelation').value.trim(),loc=document.getElementById('prepLocation').value.trim(),formal=document.getElementById('prepFormal').value;
+ const specifics=planSpecifics(type);
+ const dateText=date?new Date(date+'T12:00:00').toLocaleDateString(undefined,{day:'numeric',month:'long',year:'numeric'}):'Date not set';
+ const plan={type:'plan',title:type,created:new Date().toISOString(),meta:[dateText,relation||'relationship not specified',loc||'location not specified',formal].join(' · '),body:specifics.join(' ')};
+ window.currentPlan=plan;
+ document.getElementById('prepResult').className='';
+ document.getElementById('prepResult').innerHTML='<div class="answer"><div class="meta">'+escapeHtml(plan.meta)+'</div><h4>'+escapeHtml(type)+'</h4><div class="steps">'+specifics.map((s,i)=>'<div class="step"><i>'+['B','D','A'][i]+'</i><span>'+s+'</span></div>').join('')+'</div><div class="row"><button class="secondary" onclick="savePlan()">Save plan</button><button class="ghost" onclick="copyText(window.currentPlan.body)">Copy briefing</button></div></div>';
+}
+function planSpecifics(type){
+ const map={
+ "Dinner at someone's home":["Before: confirm any dietary needs early, choose a modest host gift if appropriate, and aim to arrive close to the stated time.","During: follow the host’s pace, keep your phone away, include everyone in conversation and offer help without insisting.","After: thank the host when leaving and send a short message the next day."],
+ "Wedding":["Before: RSVP promptly, follow the invitation exactly on guests, children, dress and timings, and arrange the gift without creating extra admin.","During: arrive early enough to be seated, follow photography and phone requests, and let the couple’s priorities set the tone.","After: send a warm thank-you or congratulations message if the relationship calls for it."],
+ "Funeral or memorial":["Before: check the family’s stated wishes on flowers, donations, dress and attendance.","During: be punctual, keep condolences simple and sincere, and do not expect the bereaved person to look after you socially.","After: a brief message or practical offer of help can be more valuable after the initial rush of attention."],
+ "Business dinner":["Before: know who is hosting, the purpose of the dinner and any local business customs; arrive on time.","During: let the host guide ordering and pace, keep alcohol moderate, and avoid turning the meal into a hard sales pitch too early.","After: send a concise follow-up that captures any agreed next step."],
+ "First date":["Before: agree a clear time and place, be punctual, and avoid over-engineering the occasion.","During: keep the conversation reciprocal, respect boundaries and make payment expectations easy rather than performative.","After: if you want to meet again, say so clearly rather than relying on games or delayed responses."],
+ "Party or reception":["Before: check dress, plus-one and arrival expectations.","During: greet the host, circulate rather than monopolising one person, and make introductions when useful.","After: thank the host; a separate message is especially appropriate for smaller private events."],
+ "House guest":["Before: confirm arrival/departure times, sleeping arrangements and any practical needs.","During: keep your belongings contained, contribute without taking over, and adapt to the household rhythm.","After: leave your space tidy and send a warm thank-you."],
+ "Religious occasion":["Before: check dress, seating, photography and participation expectations, especially if the tradition is unfamiliar.","During: follow the host or congregation’s cues and participate only where appropriate.","After: thank the host and avoid treating unfamiliar customs as spectacle."]
+ };return map[type]||["Before: confirm the practical expectations.","During: follow the host’s cues and keep others comfortable.","After: close the loop with an appropriate thank-you or follow-up."]
+}
+function savePlan(){if(!window.currentPlan)return;state.saved.unshift({...window.currentPlan,id:uid()});persist();toast('Plan saved')}
+
+function draftMessage(){
+ const purpose=document.getElementById('sayPurpose').value,recipient=document.getElementById('sayRecipient').value.trim()||'there',tone=document.getElementById('sayTone').value,ctx=document.getElementById('sayContext').value.trim();
+ let msg=messageTemplate(purpose,recipient,ctx,tone);
+ window.currentMessage={type:'message',title:purpose+' — '+recipient,body:msg,created:new Date().toISOString()};
+ document.getElementById('sayResult').className='';
+ document.getElementById('sayResult').innerHTML='<div class="messagebox" contenteditable="true" id="editableMessage">'+escapeHtml(msg)+'</div><div class="row" style="margin-top:12px"><button class="secondary" onclick="copyEditable()">Copy</button><button class="ghost" onclick="saveMessage()">Save</button></div>';
+}
+function messageTemplate(purpose,r,c,tone){
+ const detail=c?(' '+c.trim().replace(/[.]+$/,'')+'.'):'';
+ const templates={
+ "Thank someone":`Hi ${r}, thank you so much for thinking of me.${detail} I really appreciated it and wanted to say how thoughtful it was. Thank you again.`,
+ "Decline an invitation":`Hi ${r}, thank you very much for inviting me.${detail} I’m sorry I won’t be able to make it, but I really appreciate being included and hope you have a wonderful time.`,
+ "Apologise":`Hi ${r}, I wanted to apologise properly.${detail} I’m sorry for the effect that had on you. I should have handled it better, and I appreciate your patience.`,
+ "Offer condolences":`Dear ${r}, I was so sorry to hear your news.${detail} I’m thinking of you and your family, and sending you my warmest thoughts at such a difficult time.`,
+ "Congratulate someone":`Hi ${r}, huge congratulations.${detail} It’s wonderful news and I’m really pleased for you. I hope you get a chance to celebrate properly.`,
+ "Introduce two people":`Hi ${r}, I wanted to introduce you to someone I think you’d enjoy knowing.${detail} I’ll leave you both to take it from here, but I hope the introduction is useful.`,
+ "Follow up after meeting":`Hi ${r}, it was a pleasure meeting you.${detail} I enjoyed our conversation and wanted to follow up while it was still fresh. I’d be very happy to continue it.`,
+ "Ask for a favour":`Hi ${r}, I wondered if I could ask a favour.${detail} Please don’t feel under any pressure if it isn’t convenient — I completely understand.`
+ };
+ let msg=templates[purpose]||`Hi ${r},${detail}`;
+ if(tone==='Concise')msg=msg.replace(/ I really appreciated it and wanted to say how thoughtful it was\./,'').replace(/ I hope you get a chance to celebrate properly\./,'');
+ if(tone==='Formal')msg=msg.replace(/^Hi /,'Dear ').replace(/huge congratulations/i,'many congratulations');
+ if(tone==='Friendly')msg=msg.replace('Thank you again.','Really appreciate it — thank you!');
+ return msg
+}
+async function copyText(t){try{await navigator.clipboard.writeText(t);toast('Copied')}catch(e){toast('Copy unavailable')}}
+function copyEditable(){const t=document.getElementById('editableMessage').innerText;copyText(t)}
+function saveMessage(){const el=document.getElementById('editableMessage');if(!el)return;window.currentMessage.body=el.innerText;state.saved.unshift({...window.currentMessage,id:uid()});persist();toast('Message saved')}
+
+const countries=[
+{name:'United Kingdom',flag:'🇬🇧',tags:'timing dining hosting',greeting:'Polite restraint is common; first names are widely used but follow the other person’s level of formality.',dining:'For private invitations, punctuality matters, though arriving a few minutes after the stated dinner time is often acceptable.',gifts:'A modest host gift is thoughtful but not obligatory in every setting.',watch:'Queueing, personal space and understated courtesy carry social weight.'},
+{name:'France',flag:'🇫🇷',tags:'dining greeting business',greeting:'Greetings can be more formal at first; use titles and surnames when the setting calls for it.',dining:'Meals may be longer and more structured. Follow the host’s pace rather than rushing.',gifts:'Flowers, chocolates or a considered small gift may be appropriate for private hosting.',watch:'Avoid assuming casual informality too early in professional settings.'},
+{name:'Italy',flag:'🇮🇹',tags:'wedding dining family',greeting:'Warmth is common, but formality varies sharply by setting and generation.',dining:'Meals are social occasions; conversation and pace matter as much as the food.',gifts:'A thoughtful host gift is often appreciated for private invitations.',watch:'Dress can communicate respect for the occasion, especially at weddings and religious sites.'},
+{name:'Japan',flag:'🇯🇵',tags:'business dining gifts',greeting:'Bowing conventions vary by context; in business, follow your host’s cue and exchange cards carefully.',dining:'Table manners differ by dish and setting. Observe the host and avoid highly individualistic behaviour.',gifts:'Presentation matters. Gifts are often given and received with both hands.',watch:'Avoid forcing informality, loudness or direct confrontation.'},
+{name:'United Arab Emirates',flag:'🇦🇪',tags:'dubai business home',greeting:'Hospitality is important. Use respectful forms of address until the relationship becomes more informal.',dining:'If invited into a home, follow the host’s cues closely around seating, food and timing.',gifts:'Modest, culturally appropriate gifts can be welcomed; avoid assumptions around alcohol.',watch:'Dress and public behaviour should reflect the setting and local norms.'},
+{name:'United States',flag:'🇺🇸',tags:'business tipping dining',greeting:'First names and direct introductions are common, including in many professional contexts.',dining:'Restaurant service is generally quicker and tipping remains customary in many situations.',gifts:'Host gifts are appreciated but not universally expected.',watch:'Friendly directness is common; do not confuse informality with lack of boundaries.'},
+{name:'Spain',flag:'🇪🇸',tags:'timing dining social',greeting:'Social interactions can be warm and expressive; greetings vary by familiarity and region.',dining:'Meals often start later than in northern Europe and may run long.',gifts:'A small host gift can be appropriate for private dinners.',watch:'Do not apply northern-European timing assumptions rigidly to social events.'},
+{name:'Germany',flag:'🇩🇪',tags:'business timing dining',greeting:'Professional interactions may begin more formally than in the UK or US.',dining:'Punctuality is generally valued, including socially.',gifts:'A modest host gift is appropriate for many private invitations.',watch:'Clear, direct communication may be normal and should not automatically be read as impolite.'},
+{name:'India',flag:'🇮🇳',tags:'family gifts dining business',greeting:'Forms of address and formality vary greatly by age, region, language and setting.',dining:'Hospitality can be generous; accept or decline food graciously and follow the household’s cues.',gifts:'Thoughtful gifts are common in many family and celebratory contexts.',watch:'India is highly diverse; avoid treating one regional practice as universal.'}
+];
+function renderCountries(){const q=(document.getElementById('worldSearch')?.value||'').toLowerCase();const list=countries.filter(c=>(c.name+' '+c.tags).toLowerCase().includes(q));document.getElementById('countryGrid').innerHTML=list.map((c,i)=>'<button class="country" onclick="showCountry(\''+c.name.replace(/'/g,"\\'")+'\')"><strong>'+c.flag+' '+c.name+'</strong><span>'+c.tags.split(' ').slice(0,3).join(' · ')+'</span></button>').join('')||'<div class="empty">No matching country in this preview set.</div>'}
+function showCountry(name){const c=countries.find(x=>x.name===name);if(!c)return;document.getElementById('worldResult').innerHTML='<div class="worldcard"><div class="meta" style="color:#9db0a7">CULTURE GUIDE</div><h3>'+c.flag+' '+c.name+'</h3><p>Use this as orientation, then follow the actual host, venue or local organiser when signals differ.</p><div class="worldcols"><div><strong>Greeting</strong><p>'+c.greeting+'</p></div><div><strong>Dining & hosting</strong><p>'+c.dining+' '+c.gifts+'</p></div><div><strong>Watch for</strong><p>'+c.watch+'</p></div></div></div>'}
+
+const scenarios=[
+{text:"You arrive 20 minutes early for a private dinner. What is the least awkward choice?",choices:[["Wait nearby and arrive close to the invited time",true,"Yes. Turning up substantially early can create work while the host is still preparing."],["Ring the bell immediately",false,"Usually not. Being very early can be more disruptive than being a few minutes late."],["Message asking whether you can come in now",false,"Better than simply arriving, but still creates a decision for the host. Waiting nearby is usually easier."]]},
+{text:"A colleague introduces you to someone whose name you immediately forget.",choices:[["Avoid using their name all evening",false,"That can work briefly, but it often becomes more awkward."],["Ask again early and lightly",true,"Yes. A simple 'I'm sorry — remind me of your name?' is usually less awkward than pretending."],["Ask someone else later and hope they don't notice",false,"Possible, but unnecessary. Early, direct correction is often the cleanest option."]]},
+{text:"You need to decline a small dinner invitation from a friend.",choices:[["Give a long explanation so they know you care",false,"A long excuse can accidentally create pressure or sound defensive."],["Thank them, decline clearly, and keep the reason proportionate",true,"Exactly. Warmth plus clarity is usually enough."],["Do not reply until the last minute",false,"That transfers uncertainty to the host and makes planning harder."]]},
+{text:"At a business dinner abroad, local dining customs are unfamiliar.",choices:[["Copy the most senior person exactly",false,"Observation helps, but copying every detail can become conspicuous."],["Ask one discreet question and follow the table's pace",true,"Yes. Curiosity plus observation is usually more natural than pretending expertise."],["Use the etiquette from home because it is safer",false,"Local context generally matters more than exporting your home convention."]]}
+];
+function renderScenario(){const i=state.practice.index%scenarios.length,s=scenarios[i];document.getElementById('scenarioIndex').textContent=i+1;document.getElementById('scenarioTotal').textContent=scenarios.length;document.getElementById('scenarioText').textContent=s.text;document.getElementById('scenarioChoices').innerHTML=s.choices.map((c,idx)=>'<button class="choice" onclick="chooseScenario('+idx+')">'+c[0]+'</button>').join('');document.getElementById('scenarioFeedback').innerHTML='';renderPracticeStats()}
+function chooseScenario(idx){const s=scenarios[state.practice.index%scenarios.length],c=s.choices[idx];document.getElementById('scenarioFeedback').innerHTML='<div class="feedback"><strong>'+ (c[1]?'Good call.':'A more considerate option exists.') +'</strong><br>'+c[2]+'</div>';state.practice.done++;if(c[1]){state.practice.good++;state.practice.streak++}else state.practice.streak=0;persist()}
+function nextScenario(){state.practice.index=(state.practice.index+1)%scenarios.length;persist();renderScenario()}
+function renderPracticeStats(){const p=state.practice||defaultState.practice;const pct=Math.min(100,(p.done/scenarios.length)*100);document.getElementById('practiceProgress').style.width=pct+'%';document.getElementById('doneCount').textContent=p.done;document.getElementById('gentleCount').textContent=p.good;document.getElementById('streakCount').textContent=p.streak}
+
+function addPerson(){const name=v('personName');if(!name){toast('Add a name first');return}state.people.unshift({id:uid(),name,relation:v('personRelation'),prefs:v('personPrefs'),notes:v('personNotes')});['personName','personRelation','personPrefs','personNotes'].forEach(id=>document.getElementById(id).value='');persist();toast('Person saved')}
+function renderPeople(){const el=document.getElementById('peopleList');if(!state.people.length){el.innerHTML='<div class="empty">No people saved yet.</div>';return}el.innerHTML=state.people.map(p=>'<div class="item"><div class="itemtop"><div><h4>'+escapeHtml(p.name)+'</h4><div class="meta">'+escapeHtml(p.relation||'No relationship added')+'</div></div><button class="ghost" onclick="deletePerson(\''+p.id+'\')">Delete</button></div><p>'+escapeHtml([p.prefs,p.notes].filter(Boolean).join(' · ')||'No notes yet')+'</p></div>').join('')}
+function deletePerson(id){state.people=state.people.filter(p=>p.id!==id);persist();toast('Person removed')}
+
+function filterSaved(type,btn){savedFilter=type;document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderSaved()}
+function renderSaved(){const el=document.getElementById('savedList');const items=state.saved.filter(s=>savedFilter==='all'||s.type===savedFilter);if(!items.length){el.innerHTML='<div class="empty">Nothing saved in this view yet.</div>';return}el.innerHTML=items.map(s=>'<div class="item"><div class="itemtop"><div><div class="meta">'+escapeHtml(s.type.toUpperCase())+' · '+fmtDate(s.created)+'</div><h4>'+escapeHtml(s.title)+'</h4></div><button class="ghost" onclick="deleteSaved(\''+s.id+'\')">Delete</button></div><p>'+escapeHtml((s.meta?s.meta+' · ':'')+s.body)+'</p></div>').join('')}
+function deleteSaved(id){state.saved=state.saved.filter(s=>s.id!==id);persist();toast('Saved item removed')}
+function renderHome(){const plans=state.saved.filter(s=>s.type==='plan').slice(0,3),recent=state.saved.filter(s=>s.type!=='plan').slice(0,3);document.getElementById('homePlans').innerHTML=plans.length?plans.map(s=>miniItem(s)).join(''):'<div class="empty">No occasion plans yet.</div>';document.getElementById('homeSaves').innerHTML=recent.length?recent.map(s=>miniItem(s)).join(''):'<div class="empty">Nothing saved yet.</div>'}
+function miniItem(s){return '<div class="item"><div class="meta">'+escapeHtml(s.type.toUpperCase())+' · '+fmtDate(s.created)+'</div><h4>'+escapeHtml(s.title)+'</h4><p>'+escapeHtml((s.meta||s.body||'').slice(0,120))+'</p></div>'}
+
+function exportData(){const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='etiquette-data.json';a.click();URL.revokeObjectURL(a.href);toast('Data exported')}
+function importData(e){const file=e.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=()=>{try{const d=JSON.parse(reader.result);state=Object.assign({},defaultState,d);persist();toast('Data imported')}catch(err){toast('Could not import file')}};reader.readAsText(file);e.target.value=''}
+function resetData(){if(!confirm('Delete all locally saved etiquette data?'))return;state=JSON.parse(JSON.stringify(defaultState));persist();renderScenario();toast('Local data deleted')}
+function v(id){return document.getElementById(id).value.trim()}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function fmtDate(d){try{return new Date(d).toLocaleDateString(undefined,{day:'numeric',month:'short'})}catch(e){return''}}
+function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+renderHome();renderPeople();renderSaved();renderCountries();renderScenario();
 </script>
 </body>
 </html>
