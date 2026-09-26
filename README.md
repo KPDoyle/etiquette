@@ -1,23 +1,30 @@
 # Etiquette
 
-A high-fidelity consumer product demonstrator for modern etiquette management.
+A functional, local-first consumer etiquette workspace for real-life situations.
 
-## Product idea
+## Live product concept
+
+The application is designed around a simple promise:
 
 **Know what to do. Know what to say.**
 
-Etiquette is designed around the user's real situation rather than a static library of manners. The demonstrator brings together five consumer modes:
+It now includes working consumer flows for:
 
-- **Ask** — situational help in the moment
-- **Prepare** — occasion briefings before an event
-- **Say** — socially appropriate messages and responses
-- **World** — culture-aware etiquette context
-- **Practice** — low-pressure rehearsal for social situations
+- **Ask** — situational guidance using an in-browser etiquette rules engine
+- **Prepare** — build and save occasion briefings
+- **Say** — generate, edit, copy and save socially appropriate messages
+- **World** — searchable culture-aware etiquette guides
+- **Practice** — interactive scenarios with feedback and progress
+- **People** — save relationship context and preferences locally
+- **Saved** — manage advice, messages and plans
+- **Privacy & data** — local browser storage plus JSON export/import/reset
 
-## Demonstrator scope
+## Product position
 
-This repository intentionally presents a convincing product experience without claiming that every future advice engine, cultural dataset, private memory layer, camera workflow or external integration is already production-ready.
+This is a functional demonstrator, not a claim that every future feature is already a production service.
 
-The product principle is simple: **no etiquette score, no judgement, context first.**
+The current release deliberately avoids fake integrations or a pretend human concierge. Personal data remains in the browser unless the user exports it. A future production release can replace the local guidance engine with a governed AI service and expand the cultural knowledge base.
 
-Open `index.html` directly or deploy the repository as a static site.
+## Deployment
+
+Static HTML/CSS/JavaScript with no required login or backend. Suitable for direct Vercel deployment.
