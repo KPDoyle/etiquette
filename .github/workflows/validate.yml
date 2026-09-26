@@ -1,0 +1,30 @@
+name: Validate static app
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract inline application script
+        run: |
+          python - <<'PY'
+          import re, pathlib
+          html=pathlib.Path("index.html").read_text()
+          scripts=re.findall(r"<script>(.*?)</script>", html, re.S)
+          assert scripts, "No inline script found"
+          pathlib.Path("/tmp/app.js").write_text("\n".join(scripts))
+          PY
+      - name: Check JavaScript syntax
+        run: node --check /tmp/app.js
+      - name: Check required product areas
+        run: |
+          grep -q 'view-ask' index.html
+          grep -q 'view-prepare' index.html
+          grep -q 'view-say' index.html
+          grep -q 'view-world' index.html
+          grep -q 'view-practice' index.html
+          grep -q 'view-people' index.html
+          grep -q 'view-saved' index.html
